@@ -121,6 +121,7 @@ pub enum Protocol<'a> {
     Utp,
     WebTransport,
     Ws(Cow<'a, str>),
+    #[deprecated]
     Wss(Cow<'a, str>),
     Ip6zone(Cow<'a, str>),
     Ipcidr(u8),
